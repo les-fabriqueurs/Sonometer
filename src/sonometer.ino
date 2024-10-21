@@ -146,6 +146,7 @@ int getFloorLevel(){
 int getCeilingLevel(){
     int valRead= analogRead(MAX_PIN);
     long valMax= INPUT_CEILING_MIN + (INPUT_CEILING_MAX - INPUT_CEILING_MIN)*long(valRead)/1023;
+    return(int(valMax));
 }
 
 //-----------------------------------------------------------------------------------
